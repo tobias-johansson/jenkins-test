@@ -6,6 +6,6 @@ node {
     sh 'echo "Test!"'
   }
   stage('Trigger') {
-    build "agg/${BRANCH_NAME}"
+    build job: "agg/${BRANCH_NAME}", wait: false
   }
 }
