@@ -1,5 +1,5 @@
 node {
-  
+
   properties([
     pipelineTriggers([
       [$class: "GitHubPushTrigger"]
@@ -7,7 +7,7 @@ node {
   ])
 
   stage('Build') {
-    sh 'echo "Hey!"'
+    sh 'echo "Hello!"'
   }
   stage('Test') {
     sh 'echo "Test!"'
